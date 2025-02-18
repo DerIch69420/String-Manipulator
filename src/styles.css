@@ -1,0 +1,141 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #e0e0e0;
+  background-color: #0a192f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+}
+
+a {
+  font-weight: 500;
+  color: #4db5ff;
+  text-decoration: inherit;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #3399ff;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  word-break: break-word;
+}
+
+input, button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #e0e0e0;
+  background-color: #112240;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  cursor: pointer;
+  background-color: #2563eb;
+}
+
+button:hover {
+  background-color: #1e4ec7;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #1a3e9f;
+  transform: scale(0.95);
+}
+
+input:focus, button:focus {
+  outline: none;
+  border-color: #4db5ff;
+}
+
+.output {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.output .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  background: #112240;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
+}
+
+.output strong {
+  min-width: 100px;
+  text-align: left;
+}
+
+.output span {
+  flex-grow: 1;
+  text-align: right;
+  color: #a0c4ff;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+

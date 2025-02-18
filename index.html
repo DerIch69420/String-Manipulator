@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Welcome to the only String Manipulator you need!</h1>
+
+      <form class="row" id="inputForm">
+        <input id="input" placeholder="Enter a text" />
+        <button type="submit">Manipulate</button>
+      </form>
+
+      <div class="output">
+        <div class="row">
+          <strong>Reversed:</strong>
+          <span id="reversed"></span>
+          <button class="copy-btn" data-target="reversed">Copy</button>
+        </div>
+        <div class="row">
+          <strong>Uppercase:</strong>
+          <span id="uppercase"></span>
+          <button class="copy-btn" data-target="uppercase">Copy</button>
+        </div>
+        <div class="row">
+          <strong>Lowercase:</strong>
+          <span id="lowercase"></span>
+          <button class="copy-btn" data-target="lowercase">Copy</button>
+        </div>
+        <div class="row">
+          <strong>Swapcase:</strong>
+          <span id="swapcase"></span>
+          <button class="copy-btn" data-target="swapcase">Copy</button>
+        </div>
+        <div class="row">
+          <strong>Chars:</strong>
+          <span id="count_chars"></span>
+          <button class="copy-btn" data-target="count_chars">Copy</button>
+        </div>
+        <div class="row">
+          <strong>Leetspeak:</strong>
+          <span id="leetspeak"></span>
+          <button class="copy-btn" data-target="leetspeak">Copy</button>
+        </div>
+        <div class="row">
+          <strong>No duplicates:</strong>
+          <span id="remove_duplicates"></span>
+          <button class="copy-btn" data-target="remove_duplicates">Copy</button>
+        </div>
+        <div class="row">
+          <strong>Shuffled:</strong>
+          <span id="shuffle"></span>
+          <button class="copy-btn" data-target="shuffled">Copy</button>
+        </div>
+        <div class="row">
+          <strong>No whitespaces:</strong>
+          <span id="remove_whitespaces"></span>
+          <button class="copy-btn" data-target="remove_whitespaces">
+            Copy
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
